@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es5"],
+    "declaration": true,
+    "types": ["node"],
+    "strict": true,
+
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "noEmitOnError": true,
+
+    "skipLibCheck": true,
+
+    "outDir": "./dist",
+    "baseUrl": "."
+  },
+  "include": ["src/create/**/*", "src/foo/**/*"],
+  "exclude": ["dist", "node_modules", "**/*.test.ts"]
+}

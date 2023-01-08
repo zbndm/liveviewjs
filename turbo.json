@@ -1,0 +1,20 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "pipeline": {
+    "format": {    
+    },
+    "dist": {
+      "dependsOn": ["^dist", "test"],
+      "outputs": ["dist/**", "build/**"],
+      "inputs": ["src/**/*.ts"]
+    },
+    "test": {
+      "outputs": ["coverage/**"],
+      "inputs": ["src/**/*.ts"]
+    },
+    "publish": {
+      "dependsOn": ["test", "dist"],
+      "cache": false
+    }
+  }
+}
