@@ -10,13 +10,7 @@
     "packages/express",
     "apps/liveviewjs.com"
   ],
-  "keywords": [
-    "liveviewjs",
-    "liveview",
-    "phoenix",
-    "typescript",
-    "javascript"
-  ],
+
   "author": "Donnie Flood <donnie@floodfx.com>",
   "license": "MIT",
   "scripts": {

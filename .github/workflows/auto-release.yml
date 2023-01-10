@@ -31,7 +31,7 @@ jobs:
       # publish to npm if version is different
       - uses: JS-DevTools/npm-publish@v1
         with:
-          token: ${{ secrets.NPM_PUBLISH_TOKEN }}
+          token: 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
       - name: Automatic GitHub Release
         uses: justincy/github-action-npm-release@2.0.2
         id: release

@@ -2,7 +2,7 @@
 
 export const vehicleTypeValues = ["gas", "electric", "hybrid", "dontHave"] as const;
 
-export type VehicleType = typeof vehicleTypeValues[number];
+export type VehicleType = (typeof vehicleTypeValues)[number];
 
 export const vehicleTypeLabels: Record<VehicleType, string> = {
   gas: "🦕 Gas",
@@ -20,7 +20,7 @@ export const vehicleCO2Tons: Record<VehicleType, number> = {
 
 export const spaceHeatingTypeValues = ["gas", "oil", "electric", "heatpump", "notsure"] as const;
 
-export type SpaceHeatingType = typeof spaceHeatingTypeValues[number];
+export type SpaceHeatingType = (typeof spaceHeatingTypeValues)[number];
 
 export const spaceHeatingTypeLabels: Record<SpaceHeatingType, string> = {
   gas: "🔥 Furnace that burns gas",
@@ -40,7 +40,7 @@ export const spaceHeatingCO2Tons: Record<SpaceHeatingType, number> = {
 
 export const gridElectricityTypeValues = ["grid", "renewable", "solar", "notsure"] as const;
 
-export type GridElectricityType = typeof gridElectricityTypeValues[number];
+export type GridElectricityType = (typeof gridElectricityTypeValues)[number];
 
 export const gridElectricityTypeLabels: Record<GridElectricityType, string> = {
   grid: "🔌 Grid electricity",
